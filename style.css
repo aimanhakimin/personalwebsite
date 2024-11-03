@@ -1,0 +1,474 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #333;
+	line-height: 1.6;
+	background-color: #f5f5f5;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #f39c12;
+}
+
+/* Header Section */
+#header {
+	position: relative;
+	height: 100vh;
+	background-image: url('img/header-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+}
+
+.navbar-logo {
+	font-size: 24px;
+	font-weight: 700;
+	color: #333;
+	letter-spacing: 2px;
+}
+
+.navbar-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.navbar-menu li {
+	margin: 0 10px;
+}
+
+.navbar-menu li a {
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+	transition: all 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+	color: #f39c12;
+}
+
+.navbar-toggle {
+	display: none;
+}
+
+.header-content {
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.header-title {
+	font-size: 48px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.header-subtitle {
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.typed {
+	color: #f39c12;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #f39c12;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #e67e22;
+}
+
+.btn-primary {
+	background-color: #f39c12;
+}
+
+/* Home Section */
+.section {
+	padding: 100px 0;
+}
+
+.section-title {
+	font-size: 36px;
+	font-weight: 700;
+	color: #333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.section-subtitle {
+	font-size: 20px;
+	font-weight: 400;
+	color: #555;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* About Section */
+.header-image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.header-image img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.col-md-6 {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 0 30px;
+}
+
+/* Resume Section */
+#resume {margin-top: -700px;
+    
+}
+#resume {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col-md-4 {
+  margin-bottom: 30px;
+}
+
+.col-md-4 h3,
+.col-md-8 h3 {
+  margin-bottom: 20px;
+}
+
+.col-md-4 p {
+  margin-bottom: 10px;
+}
+
+.col-md-4 h4,
+.col-md-8 h4 {
+  margin-bottom: 10px;
+}
+
+.col-md-8 ul li {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .col-md-4,
+  .col-md-8 {
+    margin-bottom: 30px;
+  }
+}
+
+.resume-photo {
+	width: 500%;
+	max-width: 350px;
+	border-radius: 20%;
+	margin-bottom: 50px;
+	margin-left: 580px;
+  }
+  .download-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #428bca;
+	color: #fff;
+	border-radius: 4px;
+	text-decoration: none;
+  }
+  
+  .download-btn:hover {
+	background-color: #3071a9;
+  }
+  
+  .download-btn i {
+	margin-right: 5px;
+  }
+  
+
+/* Timetable Styles */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .timetable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+  }
+  
+  .timetable th,
+  .timetable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .timetable th {
+    background-color: #f5f5f5;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .timetable td {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  .timetable td .course-code {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .timetable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .timetable tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .social-icons a {
+	display: inline-block;
+	margin: 0 10px;
+	margin-top: -50px;
+  }
+  
+  .social-icons img {
+	width: 75px;
+  }
+
+  /* Login */
+  form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 400px;
+	margin: 0 auto;
+  }
+  
+  label {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+	background-color: #f39c12;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #e67e22;
+  }
+  /* Style for registration form */
+form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 400px;
+	margin: 0 auto;
+  }
+  
+  label {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  select {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 20px;
+  }
+  
+  select {
+	height: 40px;
+  }
+  
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+	background-color: #f39c12;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+	background-color: #e67e22;
+  }
+  
+  input[type="submit"]:focus,
+  input[type="reset"]:focus,
+  input[type="button"]:focus {
+	outline: none;
+  }
+  
+  /* Style for form validation error message */
+  .error-message {
+	color: red;
+	font-size: 14px;
+	margin-top: 5px;
+  }
+
+  /* Gallery Section */
+#gallery {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    margin: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery-item p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gallery-item audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+}

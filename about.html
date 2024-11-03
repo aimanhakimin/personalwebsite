@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-nNEv1ajXy2aKx1kym7lU0ll6U5R6Ckmvg6p5HCzwCf3m3X7EKmHQzr5A6J5c6n5U6RZUkpyfPJg7J33ksbBJvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#header {
+			position: relative;
+		}
+
+		video {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			z-index: -1;
+		}
+
+		@media only screen and (max-width:600px) {
+			video {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Header Section -->
+	<header id="header">
+		<video autoplay muted loop>
+			<source src="assets/about-vid.mp4" type="video/mp4">
+		</video>
+		<nav class="navbar">
+			<div class="container">
+				<a href="index.html" class="navbar-logo">My Personal Website</a>
+				<ul class="navbar-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Biography</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="timetable.html">Timetable</a></li>
+					 <li><a href="gallery.html">Gallery</a></li>
+					<li><a href="social.html">Socials</a></li>
+					<li><a href="login.html" style="color:Blue">Log In</a></li>
+				</ul>
+				<div class="navbar-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+		<div class="header-content">
+			<h1 class="header-title" style="color:grey">About Me</h1>
+			<p class="header-subtitle" style="color:silver">Get to know me<span class="typed"></span></p>
+			<a href="resume.html" class="btn btn-primary">View my work</a>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<section id="about" class="section">
+		<div class="container">
+			<h2 class="section-title">Biography</h2>
+			<p class="section-subtitle">Assalamualaikum and Hello, my name is Mohammad Aiman Hakimin bin Mohd Asmadi. I am 21 years old. My hometown is at Pasir Mas, Kelantan. Now, I'm at Shah Alam, Selangor to pursue my study in Netcentric Computing at UiTM Shah Alam. It is my passion to explore things in computers and technologies as now I can make it as my career other than just a hobby. I also love cars so much and nowadays, cars are focusing more in technologies to built into the car and Electric Vehicle (EV) technology are eventually going to take over in the near future to replace the current vehicles. If you are interested to hire me in anything that related in computers or technologies, please feel free to contact me anytime. You can read my current achievements in the resume page. </p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p style="color: black;">&copy; 2023 Aiman Hakimin. All rights reserved.</p>
+		</div>
+	</footer>
+	<!-- Main Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-C1X9vGx6UuAr6Nz2y0Kd6iPq3/SS0ox26eZmC"></script>
+	<script src="script.js"></script>
+	</body>
+	</html>

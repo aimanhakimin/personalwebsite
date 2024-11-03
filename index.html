@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>About Me</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-nNEv1ajXy2aKx1kym7lU0ll6U5R6Ckmvg6p5HCzwCf3m3X7EKmHQzr5A6J5c6n5U6RZUkpyfPJg7J33ksbBJvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		#header {
+			position: relative;
+		}
+		video {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			z-index: -1;
+		}
+		@media only screen and (max-width:600px) {
+			video {
+				display: none;
+			}
+		}
+
+		/* Styled play/pause button */
+		#play-button {
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			z-index: 10;
+			transition: background-color 0.3s;
+		}
+
+		#play-button:hover {
+			background-color: #0056b3;
+		}
+
+		#play-button:active {
+			transform: scale(0.98);
+		}
+	</style>
+</head>
+<body>
+	<!-- Background Music -->
+	<audio id="background-music" loop>
+		<source src="assets/background-music.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+
+	<!-- Play/Pause Button -->
+	<button id="play-button" onclick="toggleMusic()">Play Music</button>
+
+	<!-- Header Section -->
+	<header id="header">
+		<video autoplay muted loop>
+			<source src="assets/car-home.mp4" type="video/mp4">
+		</video>
+		<nav class="navbar">
+			<div class="container">
+				<a href="index.html" class="navbar-logo">My Personal Website</a>
+				<ul class="navbar-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Biography</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="timetable.html">Timetable</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="social.html">Socials</a></li>
+					<li><a href="login.html" style="color:Blue">Log In</a></li>
+				</ul>
+				<div class="navbar-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+		<div class="header-content">
+			<h1 class="header-title" style="color:grey">Hello!</h1>
+			<p class="header-subtitle" style="color:silver">Welcome to my personal website<span class="typed"></span></p>
+			<a href="about.html" class="btn btn-primary">Learn more about me</a>
+		</div>
+	</header>
+
+	<!-- Home Section -->
+	<section id="home" class="section">
+		<div class="container">
+			<h2 class="section-title">I'm Aiman Hakimin</h2>
+			<p class="section-subtitle">Netcentric Computing student (Degree) at UiTM Shah Alam</p>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<footer id="footer">
+		<div class="container">
+			<p>&copy; 2023 My Aiman Hakimin. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Main Scripts -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-C1X9vGx6UuAr6Nz2y0Kd6iPq3/SS0ox26eZmC"></script>
+	<script src="script.js"></script>
+
+	<script>
+		function toggleMusic() {
+			const music = document.getElementById("background-music");
+			const button = document.getElementById("play-button");
+
+			if (music.paused) {
+				music.play();
+				button.textContent = "Pause Music";
+			} else {
+				music.pause();
+				button.textContent = "Play Music";
+			}
+		}
+	</script>
+</body>
+</html>

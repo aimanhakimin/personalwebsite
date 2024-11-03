@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Socials</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-nNEv1ajXy2aKx1kym7lU0ll6U5R6Ckmvg6p5HCzwCf3m3X7EKmHQzr5A6J5c6n5U6RZUkpyfPJg7J33ksbBJvg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="style.css">
+    <style>
+		#header {
+			position: relative;
+		}
+
+		video {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			z-index: -1;
+		}
+
+		@media only screen and (max-width:600px) {
+			video {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- Header Section -->
+	<header id="header">
+        <video autoplay muted loop>
+			<source src="assets/forest.mp4" type="video/mp4">
+		</video>
+		<nav class="navbar">
+			<div class="container">
+				<a href="index.html" class="navbar-logo">My Personal Website</a>
+				<ul class="navbar-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">Biography</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="timetable.html">Timetable</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="social.html">Socials</a></li>
+					<li><a href="login.html"style="color:Blue">Log In</a></li>
+				</ul>
+				<div class="navbar-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+		<div class="header-content">
+			<h1 class="header-title"style="color:beige">My Socials</h1>
+			<p class="header-subtitle"style="color:grey">Connect with me on social media</p>
+		</div>
+	</header>
+
+<!-- Socials Section -->
+<section id="socials" class="section">
+    <div class="container">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/aiman_hakiminz/" target="_blank">
+                <img src="assets/instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/aimanhakiminz" target="_blank">
+                <img src="assets/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://wa.me/01140218180" target="_blank">
+                <img src="assets/whatsapp-logo.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="container">
+        <p>&copy; 2023 Aiman Hakimin. All rights reserved.</p>
+    </div>
+</footer>
+
+	<!-- Main Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-C1X9vGx6UuAr6Nz2y0Kd6iPq3/SS0ox26eZmC"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>
